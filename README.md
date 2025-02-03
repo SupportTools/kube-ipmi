@@ -21,7 +21,7 @@ This lets you easily reference hardware metadata in the Kubernetes API—useful 
 
 4. **Kubernetes Node Annotations**  
    - Annotates the Node where the Pod runs under `ipmi.support.tools/*` keys, such as:
-     ```
+    ```yaml
     ipmi.support.tools/dell-express-code: 36953844517
     ipmi.support.tools/dell-service-tag: GZ5D4X1
     ipmi.support.tools/ip-address: 172.28.10.99
@@ -29,7 +29,7 @@ This lets you easily reference hardware metadata in the Kubernetes API—useful 
     ipmi.support.tools/manufacturer: Dell Inc.
     ipmi.support.tools/model: PowerEdge R720xd
     ipmi.support.tools/serial-number: GZ5D4X1
-     ```
+    ```
 
 ---
 
