@@ -160,9 +160,6 @@ WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-ARG VERSION
-ARG GIT_COMMIT
-ARG BUILD_DATE
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
     go build -a -ldflags "-s -w" \
     -o /kube-ipmi
